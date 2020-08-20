@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zeroner.bledemo.notification.NotificationActivity">
+
+    <com.zeroner.bledemo.view.LSettingItem
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="@string/message_push_call"
+        app:rightStyle="iconSwitch"
+        android:theme="@style/MyCheckBox"
+        app:isShowRightText="true"
+        app:rightText=""
+        tools:ignore="MissingConstraints" />
+
+    <com.zeroner.bledemo.view.LSettingItem
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="@string/message_push_sms"
+        app:rightStyle="iconSwitch"
+        android:theme="@style/MyCheckBox"
+        app:isShowRightText="true"
+        app:rightText=""
+        app:layout_constraintTop_toBottomOf="@+id/item_call"/>
+
+    <com.zeroner.bledemo.view.LSettingItem
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="@string/message_push_wechat"
+        app:rightStyle="iconSwitch"
+        android:theme="@style/MyCheckBox"
+        app:isShowRightText="true"
+        app:rightText=""
+        app:layout_constraintTop_toBottomOf="@+id/item_sms"/>
+
+    <com.zeroner.bledemo.view.LSettingItem
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_skype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="@string/message_push_skype"
+        app:rightStyle="iconSwitch"
+        android:theme="@style/MyCheckBox"
+        app:isShowRightText="true"
+        app:rightText=""
+        app:layout_constraintTop_toBottomOf="@+id/item_whatsapp"/>
+
+    <com.zeroner.bledemo.view.LSettingItem
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="@string/message_push_facebook"
+        app:rightStyle="iconSwitch"
+        android:theme="@style/MyCheckBox"
+        app:isShowRightText="true"
+        app:rightText=""
+        app:layout_constraintTop_toBottomOf="@+id/item_skype"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RefreshRecyclerView"><attr format="boolean" name="refresh_able"/><attr format="boolean" name="load_more_able"/></declare-styleable>
+</resources>

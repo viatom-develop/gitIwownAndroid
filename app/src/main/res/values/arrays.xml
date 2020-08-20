@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setting_time_1">
+        <item>@string/setting_dialog_time_24</item>
+        <item>@string/setting_dialog_time_12</item>
+    </string-array>
+
+    <string-array name="setting_date_1">
+        <item>@string/setting_dialog_date_1</item>
+        <item>@string/setting_dialog_date_2</item>
+    </string-array>
+
+
+    <string-array name="setting_unit_1">
+        <item>@string/setting_dialog_unit_1</item>
+        <item>@string/setting_dialog_unit_2</item>
+    </string-array>
+
+    <string-array name="setting_weather_1">
+        <item>@string/setting_dialog_weather_1</item>
+        <item>@string/setting_dialog_weather_2</item>
+    </string-array>
+
+    <string-array name="setting_hand_1">
+        <item>@string/setting_dialog_hand_1</item>
+        <item>@string/setting_dialog_hand_2</item>
+    </string-array>
+
+    <string-array name="setting_language_1">
+        <item>@string/setting_dialog_language_1</item>
+        <item>@string/setting_dialog_language_2</item>
+    </string-array>
+
+
+    <!-- 震动模式 模式 4断奏5波浪7心跳8放射11灯塔12交响乐15快速 -->
+    <array name="shake_mode">
+        <item>4</item>
+        <item>5</item>
+        <item>7</item>
+        <item>8</item>
+        <item>11</item>
+        <item>12</item>
+        <item>15</item>
+    </array>
+
+
+
+    <array name="shake_mode_zg">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+
+
+    <string-array name="sit_down_minute">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="setting_shake_name">
+        <item>@string/shake_1</item>
+        <item>@string/shake_2</item>
+        <item>@string/shake_3</item>
+        <item>@string/shake_4</item>
+        <item>@string/shake_5</item>
+        <item>@string/shake_6</item>
+        <item>@string/shake_7</item>
+    </string-array>
+
+    <!-- 星期几 完整 -->
+    <array name="day_of_week_complete">
+        <item>@string/week_mon</item>
+        <item>@string/week_tue</item>
+        <item>@string/week_wed</item>
+        <item>@string/week_thu</item>
+        <item>@string/week_fir</item>
+        <item>@string/week_sat</item>
+        <item>@string/week_sun</item>
+    </array>
+
+    <!-- 星期几 -->
+    <array name="day_of_week">
+        <item>@string/schedule_mon</item>
+        <item>@string/schedule_tue</item>
+        <item>@string/schedule_wes</item>
+        <item>@string/schedule_thur</item>
+        <item>@string/schedule_fir</item>
+        <item>@string/schedule_sat</item>
+        <item>@string/schedule_sun</item>
+    </array>
+
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lay_root"
+    >
+    <TextView
+        android:id="@+id/sync_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:visibility="gone"
+        android:padding="@dimen/dip_size_5"
+        android:gravity="center"
+        />
+
+    <cn.lemon.view.RefreshRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sync_progress"
+        app:refresh_able="true"
+        app:load_more_able="false"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

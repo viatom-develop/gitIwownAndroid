@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_root"
+    android:layout_marginTop="@dimen/dip_size_5"
+    android:layout_marginBottom="@dimen/dip_size_5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image_2_device_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/watch_1"
+            app:layout_constraintLeft_toLeftOf="@+id/lay_root"
+            android:layout_marginStart="@dimen/dip_size_10"/>
+
+    <TextView
+        android:id="@+id/item_device_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/dip_size_16"
+        app:layout_constraintLeft_toRightOf="@+id/image_2_device_icon"
+        app:layout_constraintTop_toTopOf="@+id/image_2_device_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/image_2_device_icon"
+        />
+
+    <TextView
+        android:id="@+id/item_device_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/dip_size_16"
+        app:layout_constraintLeft_toRightOf="@+id/item_device_type"
+        app:layout_constraintTop_toTopOf="@+id/image_2_device_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/image_2_device_icon"
+        />
+
+        <ImageView
+            android:id="@+id/right_icon_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/btn_right_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/dip_size_10"
+            app:layout_constraintTop_toTopOf="@+id/image_2_device_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/image_2_device_icon"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

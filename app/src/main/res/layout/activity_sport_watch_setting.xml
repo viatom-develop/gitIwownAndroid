@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zeroner.bledemo.setting.SettingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_device_setting"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0475E4"
+        app:title="@string/title_device_setting"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--<com.google.android.material.appbar.AppBarLayout-->
+        <!--android:id="@+id/title_layout_setting"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+      <!---->
+
+
+    <!--</com.google.android.material.appbar.AppBarLayout>-->
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout_setting">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#0475E4">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                        android:minHeight="90dp"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="15dp"
+                    android:text="@string/firmwareinfo"
+                    android:id="@+id/fimeware_info"
+                      android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/white"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:minHeight="45dp"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="15dp"
+                      android:text="@string/base_settings"
+                      android:id="@+id/base_setting_title"
+                      android:textColor="@android:color/white"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/setting_time"
+                app:isShowRightText="true"
+                app:rightText=""/>
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/setting_date"
+                app:isShowRightText="true"
+                app:rightText=""/>
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/setting_unit"
+                app:isShowRightText="true"
+                app:rightText=""/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_gesture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/setting_roll"
+                app:rightStyle="iconSwitch"
+                android:theme="@style/MyCheckBox"
+                app:isShowRightText="true"
+                app:rightText=""/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_gesture_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/setting_roll_time"
+                app:isShowRightText="true"
+                app:rightText=""/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_hand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/setting_hand"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/setting_language"
+                android:clickable="true"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/auto_hr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/setting_auto_hr"
+                app:rightStyle="iconSwitch"
+                android:theme="@style/MyCheckBox"
+                app:isShowRightText="true"
+                app:rightText=""/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/smart_track"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/setting_smart_track"
+                app:rightStyle="iconSwitch"
+                android:theme="@style/MyCheckBox"
+                app:isShowRightText="true"
+                app:rightText=""/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/auto_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/setting_auto_sleep"
+                app:rightStyle="iconSwitch"
+                android:theme="@style/MyCheckBox"
+                app:isShowRightText="true"
+                app:rightText=""/>
+
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:minHeight="45dp"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="15dp"
+                      android:text="@string/more_function"
+                      android:id="@+id/more_func"
+                      android:textColor="@android:color/white"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/write_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/write_user_info"
+                app:isShowRightText="true"
+                app:rightText=""/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/write_a_weather"
+                app:isShowRightText="true"
+                app:rightText=""/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_push_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/push_a_message"
+                app:isShowRightText="true"
+                app:rightText=""/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_push_call_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/push_a_call_message"
+                app:isShowRightText="true"
+                app:rightText=""/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_shake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/setting_shake"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/set_item_shake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/real_setting_shake"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/no_disturb_all_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/no_disturb"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/no_disturb_when_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/no_disturb_when_sleep"/>
+
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/no_disturb_as_time_segment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/no_disturb_as_time_segment"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/clear_no_disturb_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/clear_no_disturb_settings"/>
+
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/get_disturb_setting_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/get_disturb_setting_info"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical|left"
+                android:id="@+id/no_disturb_info"
+                android:textColor="@color/white"
+                android:background="@android:color/darker_gray"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/write_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/write_alarm"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/close_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/close_alarm"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/get_alarm_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/alarm_info"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical|left"
+                android:id="@+id/alarm_info"
+                android:textColor="@color/white"
+                android:background="@android:color/darker_gray"/>
+
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/write_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/write_schedule"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/close_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/close_schedule"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/clear_all_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/clear_all_schedule"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/get_schedule_support_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/get_schedule_info"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical|left"
+                android:id="@+id/schedule_info"
+                android:textColor="@color/white"
+                android:background="@android:color/darker_gray"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/set_sedentary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/write_sedentary"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/get_sedentary_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/get_sedentary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical|left"
+                android:id="@+id/sedentary_info"
+                android:textColor="@color/white"
+                android:background="@android:color/darker_gray"/>
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/selfie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="@string/selfia"
+                app:rightStyle="iconSwitch"
+                android:theme="@style/MyCheckBox"
+                app:isShowRightText="true"
+                app:rightText=""/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical|left"
+                android:id="@+id/key_model_text"
+                android:textColor="@color/white"
+                android:background="@android:color/darker_gray"/>
+
+
+            <com.zeroner.bledemo.view.LSettingItem
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_firmware_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowRightText="true"
+                app:rightText=""
+                app:leftText="@string/setting_firmware_update"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

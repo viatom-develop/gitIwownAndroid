@@ -1,0 +1,240 @@
+<resources>
+    <string name="app_name">IWBle</string>
+    <string name="app_name_1">IWBle</string>
+    <string name="view_title">BLE-APP</string>
+    <string name="unknown_device">未知设备</string>
+    <string name="menu_scan">扫描</string>
+    <string name="menu_stop">停止</string>
+    <string name="title_activity_device_info">设备信息</string>
+    <string name="label_device_address">设备MAC:</string>
+    <string name="label_state">设备状态:</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">已断开</string>
+    <string name="menu_connect">连接</string>
+    <string name="menu_disconnect">断开</string>
+    <string name="label_device_name">设备名:</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="menu_device_type_bracelet">手环</string>
+    <string name="menu_device_type_watch">手表</string>
+    <string name="menu_device_type_color_screen">彩屏手环</string>
+    <string name="menu_suggest">意见反馈</string>
+    <string name="menu_about_us">关于</string>
+    <string name="menu_ble_device_list">手环列表</string>
+
+    <string name="pls_select_sdk_type">请先点击左菜单选择连接手环的类型</string>
+    <string name="pls_unbind_bracelet">请先点击左菜单解绑手环</string>
+
+    <string name="pull_to_refresh">下拉扫描手环</string>
+    <string name="pull_to_refresh_scan">正在扫描手环...</string>
+    <string name="pull_to_refresh_load">正在加载...</string>
+    <string name="pull_to_refresh_push">释放刷新</string>
+    <string name="pull_to_refresh_success">刷新成功</string>
+    <string name="pull_to_refresh_fail">刷新失败</string>
+    <string name="pull_to_refresh_time">上次更新 M-d HH:mm</string>
+
+    <string name="title_device_list">设备</string>
+    <string name="title_device_setting">手环设置</string>
+    <string name="title_device_data">运动数据</string>
+
+    <string name="index_device_name">设备名称:%s</string>
+    <string name="index_device_mac">设备地址:%s</string>
+    <string name="index_device_status_connect">连接</string>
+    <string name="index_device_status_disconnect">断开</string>
+    <string name="index_device_status">连接状态:%s</string>
+    <string name="index_device_battery">电池:%s</string>
+    <string name="index_sport_step">步数:%s</string>
+    <string name="index_sport_distance">距离:%.1f m</string>
+    <string name="index_sport_calorie">卡路里:%.1f KCal</string>
+    <string name="index_device_model">model:%s</string>
+    <string name="index_device_version">版本:%s</string>
+    <string name="index_device_unbind">解除绑定</string>
+    <string name="index_device_connect">连接</string>
+    <string name="index_device_disconnect">断开</string>
+    <string name="index_device_notification">消息推送</string>
+    <string name="index_device_ble_log">BLE 日志</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">面板</string>
+    <string name="title_notifications">通知</string>
+    <string name="scan_connect_device">连接中:%s</string>
+
+    <string name="setting_shake">震动提醒体验模式</string>
+    <string name="setting_time">时间格式</string>
+    <string name="blood_setting">血压校准</string>
+    <string name="setting_date">日期格式</string>
+    <string name="setting_unit">度量单位</string>
+    <string name="setting_weather">温度单位</string>
+    <string name="setting_roll">翻腕手势</string>
+    <string name="setting_roll_time">翻腕手势时间</string>
+    <string name="setting_hand">惯用手</string>
+    <string name="setting_language">语言</string>
+    <string name="setting_firmware_update">固件升级</string>
+    <string name="setting_swim">游泳</string>
+
+    <string name="setting_dialog_confirm">确定</string>
+    <string name="setting_dialog_cancel">取消</string>
+
+    <string name="setting_dialog_time_24">24h</string>
+    <string name="setting_dialog_time_12">12h</string>
+
+    <string name="setting_dialog_date_1">月/日</string>
+    <string name="setting_dialog_date_2">日/月</string>
+
+    <string name="setting_dialog_unit_1">公制</string>
+    <string name="setting_dialog_unit_2">英制</string>
+
+    <string name="setting_dialog_weather_1">摄氏度</string>
+    <string name="setting_dialog_weather_2">华氏度</string>
+
+    <string name="setting_dialog_hand_1">左手</string>
+    <string name="setting_dialog_hand_2">右手</string>
+
+    <string name="setting_dialog_language_1">英</string>
+    <string name="setting_dialog_language_2">中</string>
+
+
+    <string name="shake_1">断奏</string>
+    <string name="shake_2">波浪</string>
+    <string name="shake_3">心跳</string>
+    <string name="shake_4">放射</string>
+    <string name="shake_5">灯塔</string>
+    <string name="shake_6">交响乐</string>
+    <string name="shake_7">快速</string>
+
+    <string name="heart_title">心率</string>
+    <string name="heart_curr_value">心率:%s</string>
+    <string name="heart_detail_data_title">心率详情</string>
+    <string name="r1_data_title">耳机列表</string>
+    <string name="r1_detail_data_title">耳机详情</string>
+    <string name="zg_gps_data_title">Gps信息列表</string>
+    <string name="zg_gps_detail_data_title">GPS详情</string>
+    <string name="sport_title">运动详情</string>
+
+    <!--AddSportActivity-->
+    <string name="r1_title">耳机运动分析</string>
+    <string name="zg_gps_data">GPS分析</string>
+    <string name="zg_agps_data">AGPS升级</string>
+    <string name="pb_ecg_data">心电</string>
+    <string name="sport_detail_start_time">开始时间:%s</string>
+    <string name="sport_detail_end_time">结束时间:%s</string>
+
+    <string name="sleep_title">睡眠</string>
+    <string name="sleep_title_detail">睡眠详情</string>
+    <string name="sleep_detail_total">总睡眠时长:%s </string>
+    <string name="sleep_detail_light">浅睡眠时长:%s </string>
+    <string name="sleep_detail_deep">深睡眠时长:%s </string>
+    <string name="sleep_detail_weak">清醒时长:%s</string>
+    <string name="sleep_detail_start">开始</string>
+    <string name="sleep_detail_end">结束</string>
+    <string name="sleep_detail_deep_1">深睡</string>
+    <string name="sleep_detail_light_1">浅睡</string>
+    <string name="sleep_detail_weak_1">清醒</string>
+    <string name="sleep_detail_placement">放置</string>
+
+    <string name="sync_progress_text">数据同步:%s</string>
+    <string name="sync_progress_text_over">同步完成</string>
+    <string name="sync_progress_text_start">开始同步</string>
+
+    <string name="sync_progress_text_update">固件升级</string>
+    <string name="sync_progress_text_select_file">选择固件升级文件</string>
+    <string name="sync_progress_text_start_upgrade">开始升级</string>
+    <string name="sync_progress_text_path">文件路径:%s</string>
+
+
+    <string name="dfu_action_abort">终止</string>
+    <string name="dfu_confirmation_dialog_title">应用升级</string>
+    <string name="dfu_status_switching_to_dfu">开始升级&#8230;</string>
+    <string name="dfu_status_connecting">正在连接&#8230;</string>
+    <string name="dfu_status_starting">开始升级&#8230;</string>
+    <string name="dfu_status_uploading">升级中&#8230;</string>
+    <string name="dfu_status_uploading_part" formatted="false">进度 %d/%d&#8230;</string>
+    <string name="dfu_status_validating">验证&#8230;</string>
+    <string name="dfu_status_disconnecting">断开连接&#8230;</string>
+    <string name="dfu_status_completed">完成</string>
+    <string name="dfu_status_aborted">结束</string>
+    <string name="dfu_status_error">升级失败</string>
+    <string name="dfu_status_starting_msg">初始化DFU进度条&#8230;</string>
+    <string name="dfu_status_uploading_components_msg">传输了 %s&#8230;</string>
+    <string name="dfu_status_validating_msg">确认中&#8230;</string>
+    <string name="dfu_status_connecting_msg">连接 %s&#8230;</string>
+    <string name="dfu_status_uploading_msg">发送程序到 %s&#8230;</string>
+    <string name="dfu_status_completed_msg">应用已成功发送</string>
+    <string name="dfu_status_aborted_msg">取消发送应用</string>
+    <string name="dfu_status_disconnecting_msg">断开 %s&#8230;</string>
+    <string name="dfu_status_error_msg">DFU 失败</string>
+    <string name="dfu_version_check">版本检测中&#8230;</string>
+    <string name="dfu_confirmation_dialog_exit_message">Are you sure to exit?</string>
+    <string name="dfu_upload_dialog_cancel_message">Are you sure to cancel upload?</string>
+    <string name="dfu_status_switching_to_dfu_msg">Waiting for bootloader&#8230;</string>
+    <string name="dfu_version_file_create_success">Zeroner文件创建成功</string>
+    <string name="wait_data_update">手环数据还未更新完成,请稍后重试</string>
+
+    <string name="dfu_channel_name">DFU</string>
+    <string name="dfu_channel_description">Shows DFU progress.</string>
+
+    <string name="dfu_status_initializing">初始化&#8230;</string>
+    <string name="dfu_unknown_name">未知设备</string>
+    <string name="dfu_command_write_fail">DFU 指令写入失败</string>
+    <string name="update_step_connect_device">正在连接手环...</string>
+    <string name="activity_update_over">升级完成</string>
+    <string name="update_step_write_device">正在写入手环...</string>
+    <string name="update_step_write_device_1">固件升级</string>
+    <string name="update_step_write_retry">请重试</string>
+
+    <string name="ble_log_write">Ble 写日志</string>
+    <string name="ble_log_notify">Ble 广播日志</string>
+    <string name="ble_log_test_command">指令测试模式</string>
+    <string name="ble_log_title">日志</string>
+    <string name="ble_log_send">发送</string>
+
+    <string name="normal_wrist">普通手环</string>
+    <string name="zg_wrist">彩屏手环</string>
+    <string name="sport_watch">运动手表</string>
+    <string name="protobuf_band">ProtoBuf手环</string>
+    <string name="select_sdk_tip">请对应设备选择正确SDK种类</string>
+
+
+    <string name="sport_plan_badminton">羽毛球</string>
+    <string name="sport_plan_basketball">篮球</string>
+    <string name="sport_plan_bodymechanics">健身操</string>
+    <string name="sport_plan_bowling">保龄球</string>
+    <string name="sport_plan_canoeing">划船</string>
+    <string name="sport_plan_climbing">攀岩</string>
+    <string name="sport_plan_cycling">骑行</string>
+    <string name="sport_plan_dance">舞蹈</string>
+    <string name="sport_plan_football">足球</string>
+    <string name="sport_plan_golf">高尔夫</string>
+    <string name="sport_plan_gymnasium">健身</string>
+    <string name="sport_plan_jump">跳绳</string>
+    <string name="sport_plan_mountaineering">登山</string>
+    <string name="sport_plan_pingpong">乒乓球</string>
+    <string name="sport_plan_pullup">引体向上</string>
+    <string name="sport_plan_pushup">俯卧撑</string>
+    <string name="sport_plan_running">跑步</string>
+    <string name="sport_plan_shuttlecock">键球</string>
+    <string name="sport_plan_situp">仰卧起坐</string>
+    <string name="sport_plan_skate">滑冰</string>
+    <string name="sport_plan_skee">滑雪</string>
+    <string name="sport_plan_slap">平板支撑</string>
+    <string name="sport_plan_speed_walking">快走</string>
+    <string name="sport_plan_spinning">动感单车</string>
+    <string name="sport_plan_swimming">游泳</string>
+    <string name="sport_plan_tennis">网球</string>
+    <string name="sport_plan_treadmill">跑步机</string>
+    <string name="sport_plan_volleyball">排球</string>
+    <string name="sport_plan_walking">步行</string>
+    <string name="sport_plan_yoga">瑜伽</string>
+    <string name="sport_module_running">跑步</string>
+    <string name="sport_module_walking">步行</string>
+    <string name="sport_module_riding">骑行</string>
+    <string name="upgrade_complete">Upgrade Complete</string>
+    <string name="upgrading">Upgrading...</string>
+
+    <string name="calorie">千卡</string>
+    <string name="sleep_minute"> 分钟</string>
+    <string name="pb_ecg_size">今天有%s条数据</string>
+
+</resources>

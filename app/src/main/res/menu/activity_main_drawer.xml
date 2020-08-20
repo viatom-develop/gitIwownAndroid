@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_unbind"
+            android:title="@string/index_device_unbind"
+            android:icon="@mipmap/device_list_item"/>
+        <item
+            android:id="@+id/nav_connect"
+            android:title="@string/index_device_connect"
+            android:icon="@mipmap/device_list_item"/>
+        <item
+            android:id="@+id/nav_disconnect"
+            android:title="@string/index_device_disconnect"
+            android:icon="@mipmap/device_list_item"/>
+        <item
+            android:id="@+id/nav_notification"
+            android:title="@string/index_device_notification"
+            android:icon="@mipmap/device_list_item"/>
+        <item
+            android:id="@+id/nav_ble_log"
+            android:title="@string/index_device_ble_log"
+            android:icon="@mipmap/device_list_item"/>
+        <item
+            android:id="@+id/nav_firmware"
+            android:title="@string/index_device_ble_dfu"
+            android:icon="@mipmap/device_list_item"/>
+    </group>
+   <group
+       android:checkableBehavior="none"
+       android:id="@+id/group_settings">
+       <item android:id="@+id/nav_suggestion"
+           android:title="@string/menu_suggest"/>
+       <item android:id="@+id/nav_about"
+           android:title="@string/menu_about_us"/>
+
+   </group>
+</menu>

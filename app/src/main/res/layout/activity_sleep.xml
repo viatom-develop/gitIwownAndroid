@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zeroner.bledemo.sleep.SleepActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/title_layout_sleep"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_device_sleep"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0475E4"
+            app:title="@string/sleep_title_detail"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sleep_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dip_size_10"
+        android:clipToPadding="false"
+        android:layout_marginTop="@dimen/dip_size_24"
+        android:layout_marginBottom="@dimen/dip_size_24"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout_sleep"
+        />
+    <LinearLayout
+        android:id="@+id/protu_sleep"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout_sleep"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

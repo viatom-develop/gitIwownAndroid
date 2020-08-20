@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lay_root"
+    tools:context="com.zeroner.bledemo.log.LogActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/title_layout_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_device_log"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0475E4"
+            app:title="@string/ble_log_title"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <EditText
+        android:id="@+id/cmd_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/dip_size_60"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/title_layout_log"
+        />
+
+    <Button
+        android:id="@+id/send_cmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ble_log_send"
+        android:hint="cmd"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/cmd_edit"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/lay_root"
+        app:layout_constraintRight_toRightOf="@+id/lay_root"
+        app:layout_constraintTop_toBottomOf="@id/send_cmd"
+       />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

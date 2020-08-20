@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_root"
+    android:layout_marginTop="@dimen/dip_size_5"
+    android:layout_marginBottom="@dimen/dip_size_5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_2_sport_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/sport_man"
+        app:layout_constraintLeft_toLeftOf="@+id/lay_root"
+        app:layout_constraintTop_toTopOf="@+id/sport_name"
+        app:layout_constraintBottom_toBottomOf="@+id/sport_name"
+        android:layout_marginStart="@dimen/dip_size_10"/>
+
+    <TextView
+        android:id="@+id/sport_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_size_5"
+        android:textSize="@dimen/dip_size_16"
+        android:textColor="@color/blue"
+        app:layout_constraintLeft_toRightOf="@+id/image_2_sport_list"
+        android:text="sportName"/>
+
+    <TextView
+        android:id="@+id/item_sport_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dip_size_10"
+        android:text="start"
+        android:textSize="@dimen/dip_size_16"
+        app:layout_constraintTop_toBottomOf="@+id/image_2_sport_list"
+        app:layout_constraintLeft_toLeftOf="@+id/sport_name"
+        />
+
+    <TextView
+        android:id="@+id/item_sport_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="end"
+        android:layout_marginTop="@dimen/dip_size_10"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/dip_size_16"
+        app:layout_constraintLeft_toRightOf="@+id/item_sport_start_time"
+        app:layout_constraintTop_toBottomOf="@+id/image_2_sport_list"
+        />
+
+    <TextView
+        android:id="@+id/sport_detail_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="step"
+        android:textSize="@dimen/dip_size_16"
+        android:layout_marginTop="@dimen/dip_size_10"
+        android:textColor="@color/yellow"
+        app:layout_constraintTop_toBottomOf="@+id/item_sport_start_time"
+        app:layout_constraintLeft_toLeftOf="@+id/sport_name"
+        />
+
+    <TextView
+        android:id="@+id/sport_detail_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="distance"
+        android:layout_marginTop="@dimen/dip_size_10"
+        android:textSize="@dimen/dip_size_16"
+        android:textColor="@color/yellow"
+        app:layout_constraintTop_toBottomOf="@+id/sport_detail_steps"
+        app:layout_constraintLeft_toLeftOf="@+id/sport_name"
+        />
+
+    <TextView
+        android:id="@+id/sport_detail_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kcal"
+        android:layout_marginTop="@dimen/dip_size_10"
+        android:textSize="@dimen/dip_size_16"
+        android:textColor="@color/yellow"
+        app:layout_constraintTop_toBottomOf="@+id/sport_detail_distance"
+        app:layout_constraintLeft_toLeftOf="@+id/sport_name"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

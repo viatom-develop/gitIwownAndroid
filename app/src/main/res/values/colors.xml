@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="device_bgk">#e0e0e0</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#0475E4</color>
+    <color name="sky">#00ff00</color>
+    <color name="black">#000000</color>
+    <color name="red_1">#ff3311</color>
+    <color name="yellow">#FFCC00</color>
+    <color name="color_1">#4B0082</color>
+    <color name="color_2">#8A2BE2</color>
+    <color name="color_3">#DDA0DD</color>
+    <color name="title_bar_color">#0476E6</color>
+
+    <color name="i_c8c7cc">#c8c7cc</color>
+    <color name="i_161616">#161616</color>
+</resources>

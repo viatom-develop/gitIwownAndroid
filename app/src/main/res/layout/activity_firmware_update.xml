@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout_firmware"
+    tools:context="com.zeroner.bledemo.setting.FirmwareUpdateActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/title_layout_firmware"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_device_firmware"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0475E4"
+            app:title="@string/sync_progress_text_update"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <io.netopen.hotbitmapgg.library.view.RingProgressBar
+        android:id="@+id/progress_bar_2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintLeft_toLeftOf="@+id/root_layout_firmware"
+        app:layout_constraintRight_toRightOf="@+id/root_layout_firmware"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout_firmware"
+        android:layout_marginTop="@dimen/dip_size_24"
+        app:max="100"
+        app:ringColor="@android:color/darker_gray"
+        app:ringProgressColor="@color/colorPrimary"
+        app:ringWidth="5dp"
+        app:style="STROKE"
+        app:textColor="@color/sky"
+        app:textIsShow="true"
+        app:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/dfu_statue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dip_size_24"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar_2"
+        app:layout_constraintLeft_toLeftOf="@+id/progress_bar_2"
+        app:layout_constraintRight_toRightOf="@+id/progress_bar_2"
+        android:layout_marginTop="@dimen/dip_size_10"
+        android:maxLines="10"
+        android:textColor="@color/sky"
+        android:text="@string/update_step_write_device_1"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/button_select_file"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dfu_statue"
+        app:layout_constraintLeft_toLeftOf="@+id/progress_bar_2"
+        app:layout_constraintRight_toRightOf="@+id/progress_bar_2"
+        android:layout_marginTop="@dimen/dip_size_10"
+        android:text="@string/sync_progress_text_select_file"
+        />
+
+    <TextView
+        android:id="@+id/file_path"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/button_select_file"
+        app:layout_constraintLeft_toLeftOf="@+id/progress_bar_2"
+        app:layout_constraintRight_toRightOf="@+id/progress_bar_2"
+        android:layout_marginTop="@dimen/dip_size_10"
+        />
+
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/file_path"
+        app:layout_constraintLeft_toLeftOf="@+id/progress_bar_2"
+        app:layout_constraintRight_toRightOf="@+id/progress_bar_2"
+        android:layout_marginTop="@dimen/dip_size_10"
+        android:text="@string/sync_progress_text_start_upgrade"
+        android:visibility="gone"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

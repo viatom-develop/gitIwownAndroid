@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/edit_item_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/edit_layout"/>
+
+    <com.zeroner.bledemo.view.LSettingItem
+        android:id="@+id/schedule_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="45dp"
+        app:isShowRightText="true"
+        app:rightText=""
+        app:leftText="@string/start_time"
+        />
+</LinearLayout>
+

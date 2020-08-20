@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/ble_log_write"
+        android:title="@string/ble_log_write"
+        android:orderInCategory="90"
+        app:showAsAction="never"/>
+    <item android:id="@+id/ble_log_notify"
+        android:title="@string/ble_log_notify"
+        android:orderInCategory="90"
+        app:showAsAction="never"/>
+    <item android:id="@+id/ble_log_test_command"
+        android:title="@string/ble_log_test_command"
+        android:orderInCategory="90"
+        app:showAsAction="never"/>
+</menu>
