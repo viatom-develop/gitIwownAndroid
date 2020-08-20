@@ -78,21 +78,25 @@ public class ViewData {
         String battery;
         String model;
         String version;
+        String sn;
         connect = BluetoothUtil.isConnected();
         try {
             battery = PrefUtil.getString(context, BaseActionUtils.Action_device_Battery);
             model = PrefUtil.getString(context, BaseActionUtils.Action_device_Model);
             version  = PrefUtil.getString(context, BaseActionUtils.Action_device_version);
+            sn = PrefUtil.getString(context, BaseActionUtils.Action_device_Sn);
         } catch (Exception e) {
             e.printStackTrace();
             battery = "0";
             model = "0";
             version = "0";
+            sn = "0";
         }
         if (TextUtils.isEmpty(battery)) {
             battery = "0";
             model = "0";
             version = "0";
+            sn = "0";
         }
         String statue = connect ? context.getString(R.string.index_device_status_connect) : context.getString(R.string.index_device_status_disconnect);
         DummyItem item = new DummyItem(context.getString(R.string.title_device_list)
@@ -101,7 +105,8 @@ public class ViewData {
                 , String.format(context.getString(R.string.index_device_status), statue)
                 , String.format(context.getString(R.string.index_device_battery), battery),
                 String.format(context.getString(R.string.index_device_model), model),
-                String.format(context.getString(R.string.index_device_version), version));
+                String.format(context.getString(R.string.index_device_version), version),
+                sn);
         items.add(item);
         return items;
     }

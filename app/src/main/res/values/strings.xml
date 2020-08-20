@@ -48,6 +48,7 @@
     <string name="index_device_battery">Battery:%s</string>
     <string name="index_device_model">model:%s</string>
     <string name="index_device_version">version:%s</string>
+    <string name="index_device_sn">sn:%s</string>
     <string name="index_sport_step">Steps:%s</string>
     <string name="index_sport_distance">Distance:%.1f m</string>
     <string name="index_sport_calorie">Calorie:%.1f KCal</string>

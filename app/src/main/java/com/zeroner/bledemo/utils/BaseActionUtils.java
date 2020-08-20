@@ -104,7 +104,7 @@ public class BaseActionUtils {
     public final static String Action_device_Model = "com.zeroner.app.Action_device_Model";
     public final static String Action_device_FirmwareInfo = "com.zeroner.app.Action_device_FirmwareInfo";
     public final static String Action_device_Settings = "com.zeroner.app.Action_device_Settings";
-
+    public final static String Action_device_Sn = "com.zeroner.app.Action_device_Sn";
     public final static String Action_device_version = "com.zeroner.app.Action_device_version";
 
 

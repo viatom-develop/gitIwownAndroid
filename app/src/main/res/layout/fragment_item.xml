@@ -16,6 +16,7 @@
         android:foreground="?attr/selectableItemBackground"
         app:layout_constraintLeft_toLeftOf="@+id/root"
         app:layout_constraintRight_toRightOf="@+id/root"
+        app:layout_constraintTop_toTopOf="parent"
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -33,6 +34,7 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 android:textSize="@dimen/dip_size_24"
                 android:textColor="@color/blue"
                />
@@ -53,6 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/dip_size_16"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/line_1"
                />
 
@@ -61,6 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/dip_size_16"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/index_device_name"
                />
 
@@ -70,6 +74,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/dip_size_16"
                 android:textColor="@color/sky"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/index_device_address"/>
 
             <TextView
@@ -77,6 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/dip_size_16"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/connect_statue"/>
 
             <TextView
@@ -84,6 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/dip_size_16"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/device_battery"/>
 
             <TextView
@@ -91,7 +98,54 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/dip_size_16"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/device_version"/>
+
+            <TextView
+                android:id="@+id/device_sn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dip_size_16"
+                app:layout_constraintTop_toBottomOf="@+id/device_model"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+
+            <!--            <Button-->
+            <!--                app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--                app:layout_constraintRight_toRightOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/device_sn"-->
+            <!--                android:id="@+id/btn_burn_ctei"-->
+            <!--                android:text="烧录CTEI"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"/>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/section_ctei"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--                <TextView-->
+            <!--                    android:text="CTEI: "-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"/>-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/ctei"-->
+            <!--                    android:hint="18096206xxxxxxx"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content" />-->
+
+            <!--            </LinearLayout>-->
+
+            <!--            <Button-->
+            <!--                app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--                app:layout_constraintRight_toRightOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--                android:id="@+id/btn_burn_ctei"-->
+            <!--                android:text="烧录CTEI"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"/>-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

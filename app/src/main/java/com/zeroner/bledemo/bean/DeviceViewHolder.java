@@ -31,7 +31,10 @@ public class DeviceViewHolder extends BaseViewHolder<DummyItem> {
     public  TextView device_model;
     public  TextView device_version;
     public  TextView mTitle;
+    public TextView device_sn;
     private Context context;
+    //    public EditText mCtei;
+//    public Button mBurnCtei;
 
     public DeviceViewHolder(ViewGroup parent, Context context) {
         super(parent, R.layout.fragment_item);
@@ -48,6 +51,10 @@ public class DeviceViewHolder extends BaseViewHolder<DummyItem> {
         mIdBattery= (TextView) findViewById(R.id.device_battery);
         device_version= (TextView) findViewById(R.id.device_version);
         device_model= (TextView) findViewById(R.id.device_model);
+        device_sn = (TextView) findViewById(R.id.device_sn);
+
+        //        mCtei = (EditText) findViewById(R.id.ctei);
+//        mBurnCtei = (Button) findViewById(R.id.btn_burn_ctei);
     }
 
     @Override
@@ -60,6 +67,32 @@ public class DeviceViewHolder extends BaseViewHolder<DummyItem> {
         mTitle.setText(String.valueOf(data.title));
         device_version.setText(data.version);
         device_model.setText(data.model);
+        device_sn.setText(data.sn);
+
+        //        mCtei.setText(data.ctei);
+//
+//        mBurnCtei.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (!SuperBleSDK.isProtoBuf(context)) {
+//                    ToastUtils.showShort("设备类型错误");
+//                    return;
+//                }
+//
+//                String ctei = mCtei.getText().toString();
+//                if (ctei.length() != 15) {
+//                    ToastUtils.showShort("CTEI码错误");
+//                    return;
+//                }
+//                String code = item.sn + ctei;
+//
+//                LogUtils.d("SN: " + item.sn, "CTEI: " + ctei);
+//
+//                byte[] bytes1 = ProtoBufSendBluetoothCmdImpl.getInstance().writeHardwareFeatures(code);
+//                BackgroundThreadManager.getInstance().addWriteData(BleApplication.getInstance(),bytes1);
+//                ToastUtils.showShort("烧录成功");
+//            }
+//        });
     }
 
     @Override

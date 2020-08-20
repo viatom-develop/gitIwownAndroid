@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Looper;
 
+import com.blankj.utilcode.util.LogUtils;
 import com.zeroner.bledemo.BleApplication;
 import com.zeroner.bledemo.HeartEvent;
 import com.zeroner.bledemo.bean.sql.PbSupportInfo;
@@ -113,6 +114,8 @@ public class ProtoBufDataParsePersenter {
                 ProtoBufHardwareInfo info = JsonTool.fromJson(data, ProtoBufHardwareInfo.class);
                 PrefUtil.save(context, BaseActionUtils.Action_device_version, info.getVersion());
                 PrefUtil.save(context, BaseActionUtils.Action_device_Model, info.getModel());
+                PrefUtil.save(context, BaseActionUtils.Action_device_Sn, info.getSn());
+                LogUtils.d("SN: " + info.getSn());
                 break;
             case 0x0001:
                 break;
