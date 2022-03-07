@@ -40,7 +40,7 @@ public class DummyItem {
 
         // codeStr = sn + ctei
         String code = codeStr.replace(" ", "");
-        String tempSn = "i am sn";
+        String tempSn ="123" /*"i am sn"*/;
 //        String tempCtei = "";
         if (code.length() > 32) {
             tempSn = code.substring(0, 32);
