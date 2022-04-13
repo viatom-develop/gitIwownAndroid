@@ -15,6 +15,15 @@ android {
         versionName rootProject.ext.android["versionName"]
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
+    }
+
+    externalNativeBuild {
+
+        cmake {
+
+            path 'CMakeLists.txt'
+
+        }
 
     }
     applicationVariants.all { variant ->
@@ -31,7 +40,7 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             ndk {
-                abiFilters "armeabi","arm64-v8a","armeabi-v7a"
+                abiFilters "arm64-v8a","armeabi-v7a"
             }
         }
     }
@@ -81,7 +90,7 @@ dependencies {
     implementation rootProject.ext.dependencies['rxandroid2']
     implementation rootProject.ext.dependencies['rxjava2']
     implementation rootProject.ext.dependencies['BaseRecyclerViewAdapterHelper']
-    implementation (name:'blesdk200608',ext:'aar')
+    implementation(name: 'blesdk210121', ext: 'aar')
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'

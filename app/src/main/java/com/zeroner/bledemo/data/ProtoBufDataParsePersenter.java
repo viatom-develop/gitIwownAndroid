@@ -5,6 +5,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Looper;
+import android.util.Log;
 
 import com.blankj.utilcode.util.LogUtils;
 import com.zeroner.bledemo.BleApplication;
@@ -375,6 +376,7 @@ public class ProtoBufDataParsePersenter {
                             ecgData.setMin(protoBufHisEPGData.getMinute());
                             ecgData.setSecond(protoBufHisEPGData.getSecond());
                             DateUtil dateUtil = new DateUtil(ecgData.getYear(), ecgData.getMonth(), ecgData.getDay(), ecgData.getHour(), ecgData.getMin(), ecgData.getSecond());
+                           Log.v("update========",""+dateUtil.getUnixTimestamp());
                             ecgData.setTime(dateUtil.getUnixTimestamp());
                             ecgData.setEcg(JsonTool.toJson(ecgRealData));
                             ecgData.saveOrUpdate("data_from=?  and year=? and month=? and day=? and hour=? and min=? and second=? and seq=?"
