@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
+import com.blankj.utilcode.util.LogUtils;
 import com.zeroner.bledemo.BleApplication;
 import com.zeroner.bledemo.R;
 import com.zeroner.bledemo.bean.sql.TB_64_data;
@@ -57,7 +58,9 @@ public class EcgActivity extends AppCompatActivity {
         //查询ECG数据库
         String deviceName = PrefUtil.getString(BleApplication.getInstance(), BaseActionUtils.ACTION_DEVICE_NAME);
         DateUtil dateUtil = new DateUtil();
+        LogUtils.d("deviceName:"+deviceName+"  "+dateUtil.getMonth()+"  "+dateUtil.getDay());
         list = DataSupport.where("data_from=? and month=? and day=?", deviceName,dateUtil.getMonth()+"",dateUtil.getDay()+"").find(TB_64_data.class);
+        LogUtils.d("list:"+ JsonUtils.toJson(list));
         List<TB_64_index_table> index_tables = DataSupport.where("data_from=? and data_ymd=?", deviceName,dateUtil.getSyyyyMMddDate()).limit(50).find(TB_64_index_table.class);
         refreshData(index_tables);
     }
