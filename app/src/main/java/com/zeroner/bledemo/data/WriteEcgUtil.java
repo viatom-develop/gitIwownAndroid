@@ -112,7 +112,7 @@ public class WriteEcgUtil {
                 for (int k = 0; k < Y.size(); k++) {
                     LogUtils.d("first 滤波前"+k+"===="+Y.get(k));
                     result = Y.get(k);
-                        result = AcFilter(result);//新手表过滤的东西
+//                        result = AcFilter(result);//新手表过滤的东西
                         result = filtering.filteringMain(result, true);
 
 
@@ -128,7 +128,7 @@ public class WriteEcgUtil {
 
                 }
 
-
+                LogUtils.d("filePath====="+filePath+"========ecgContent==="+ecgContent.toString());
                 FileIOUtils.writeFileFromString(filePath, ecgContent.toString(), false);
 
 
