@@ -13,6 +13,7 @@ import com.zeroner.bledemo.bean.sql.TB_64_index_table;
 import com.zeroner.bledemo.bean.sql.TB_mtk_statue;
 import com.zeroner.bledemo.data.ProtoBufSleepSqlUtils;
 import com.zeroner.bledemo.data.WriteEcgUtil;
+import com.zeroner.bledemo.data.viewData.ViewData;
 import com.zeroner.bledemo.eventbus.SyncDataEvent;
 import com.zeroner.bledemo.utils.BaseActionUtils;
 import com.zeroner.bledemo.utils.BluetoothUtil;
@@ -188,6 +189,8 @@ public class ProtoBufSync {
         },5000);
         List<ProtoBuf_index_80> indexTablesEcg = array.get(ECG_DATA);
         WriteEcgUtil.dispECGData(indexTablesEcg);
+
+        ProtoBufSleepSqlUtils.dispSleepData();
         totalSeqList.clear();
         array.clear();
         positionSync = 0;

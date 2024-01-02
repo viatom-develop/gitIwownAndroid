@@ -21,6 +21,7 @@ import com.zeroner.bledemo.utils.PrefUtil;
 import com.zeroner.blemidautumn.utils.JsonTool;
 import com.zeroner.blemidautumn.utils.SingleThreadUtil;
 
+import org.greenrobot.eventbus.EventBus;
 import org.litepal.crud.DataSupport;
 import org.litepal.crud.callback.SaveCallback;
 
