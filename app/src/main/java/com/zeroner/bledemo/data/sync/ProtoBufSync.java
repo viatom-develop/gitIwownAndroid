@@ -190,7 +190,6 @@ public class ProtoBufSync {
         List<ProtoBuf_index_80> indexTablesEcg = array.get(ECG_DATA);
         WriteEcgUtil.dispECGData(indexTablesEcg);
 
-        ProtoBufSleepSqlUtils.dispSleepData();
         totalSeqList.clear();
         array.clear();
         positionSync = 0;
